@@ -1,0 +1,129 @@
+.user_view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 150px;
+  padding: 70px 50px;
+  background: white;
+
+  &-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+
+
+    &-phone-f {
+      position: relative;
+    }
+
+    &-phone {
+      color: #008B45;
+      font-size: 30px;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+
+    &-right-icon {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      left: 170px;
+      top: 10px;
+    }
+
+    &-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-top: 5px;
+    }
+
+  }
+}
+
+
+.balance {
+  display: flex;
+  height: 230px;
+  background: #60cb9d;
+  border-radius: 10px;
+  margin: 20px;
+  align-items: center;
+
+
+  &-icon {
+    width: 60px;
+    height: 60px;
+    margin-left: 90px;
+  }
+
+  &-desc {
+    font-size: 33px;
+    color: white;
+    margin-left: 60px;
+  }
+
+  &-money {
+    margin-left: 5px;
+  }
+}
+
+
+.menu {
+  display: flex;
+  margin: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &-item {
+    display: flex;
+    width: 50%;
+    background: white;
+    justify-content: center;
+    padding: 30px 0;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #F0F0F0;
+    border-top-width: 0;
+    border-right-width: 0;
+  }
+
+  &-onLine {
+    width: 100%;
+  }
+
+  &-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  &-title {
+    padding-left: 10px;
+    font-size: 28px;
+  }
+}
+
+.extract {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #60cb9d;
+  height: 80px;
+  border-radius: 40px;
+  margin: 70px 60px;
+
+  &-title {
+    color: white;
+    font-size: 30px;
+  }
+}
+
+
+page {
+  background: #F0F0F0;
+}
+
+
+
+
