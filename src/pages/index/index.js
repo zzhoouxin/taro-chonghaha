@@ -32,6 +32,12 @@ export default class Index extends Component {
     super(props);
   }
 
+  handleClick = (item) => {
+    Taro.navigateTo({
+      url: `/pages/aboutus/index`
+    })
+  }
+
 
   render() {
     return (
@@ -64,7 +70,7 @@ export default class Index extends Component {
           {
             menuList.map((item) => {
               return (
-                <View className={item.id === 7 ? 'menu-item menu-onLine' : 'menu-item '} key={item.id} onClick={()=>{console.log("点击了时间")}}>
+                <View className={item.id === 7 ? 'menu-item menu-onLine' : 'menu-item '} key={item.id} onClick={()=>{this.handleClick()}}>
                   <Image src={item.url} className='menu-icon'/>
                   <Text className='menu-title'>{item.title}</Text>
                 </View>

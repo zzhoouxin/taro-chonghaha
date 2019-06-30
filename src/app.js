@@ -1,6 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
 import { Provider } from '@tarojs/mobx'
-import Index from './pages/index'
+import Index from './pages/index';
 
 import counterStore from './store/counter'
 
@@ -20,7 +20,8 @@ class App extends Component {
 
   config = {
     pages: [
-      'pages/index/index'
+      'pages/index/index',
+      'pages/aboutus/index',
     ],
     window: {
       backgroundTextStyle: 'light',
